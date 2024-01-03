@@ -1,0 +1,97 @@
+     {%  extends 'template.html' %}
+       {% load static %}
+
+
+
+  {% block header %}
+  <nav class="navbar navbar-expand-lg navbar-light" id="menuAbout"  >
+  {% endblock header %}
+
+{% block content %}
+<br>
+<br>
+          <div class="container " id="contactUs" >
+        <h1 class=" center ">
+            ارتباط با ما
+        </h1>
+              <br>
+<div id="contact">
+ <table class="table border shadow"  >
+            <thead>
+                <tr>
+                    <th colspan="3">  <h2  class="right">
+            اطلاعات تماس
+         </h2>
+                    </th>
+
+                </tr>
+            </thead>
+            <tbody id="myTable">
+                <tr>
+                    <td rowspan="2" class="border" >   آدرس </td>
+
+                    <td> تهران:</td>
+                     <td> خیابان رودکی نرسیده به آذربایجان، نبش کوچه رضوان، پلاک 2، طبقه سوم</td>
+                </tr>
+                <tr>
+
+                    <td>  کنگان:</td>
+                    <td > استان بوشهر، شهرستان کنگان، خیابان برق، فرعی چهار، جنب حسینیه آذربایجانی</td>
+                </tr>
+                <tr>
+                     <td rowspan="2" class="border" > تلفن </td>
+                    <td>تهران:</td>
+                    <td >  021-66362471
+            <p>
+                0912-4221526</td>
+                </tr>
+                <tr>
+
+                    <td >کنگان:</td>
+                    <td >            0919-6280407
+</td>
+                </tr>
+
+             <tr>
+                     <td  class="border"> فکس </td>
+                    <td></td>
+                    <td> 021-66362471 </td>
+             </tr>
+            <tr>
+                     <td  class="border"> ایمیل </td>
+
+                    <td colspan="2" class="center">
+                    www.ViraSanjeshArka.com
+                        <p>
+                      S6368ndt@gmail.com
+
+                    </td>
+             </tr>
+            </tbody>
+        </table>
+</div>
+
+
+        <div id="contactForm" class="shadow" >
+          <h2  class="right">
+            فرم ثبت درخواست
+          </h2>  <hr>
+            <form action="{% url 'arka:base' %}">
+         <table class="tableHeight">
+    {{ form }}
+  </table>
+            <div  >
+                <button class="btn btn-block btn-outline-info">ارسال</button>
+            </div>
+</form>
+<br>
+        </div>
+
+
+
+<br>
+<br>
+
+          </div>
+
+ {% endblock %}

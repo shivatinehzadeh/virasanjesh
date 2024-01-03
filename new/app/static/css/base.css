@@ -1,0 +1,456 @@
+#open{
+ display: none;
+}
+.khdmtDiv{
+   display: grid;
+ grid-template-columns:    repeat(2, 45%);
+    justify-content: space-between;
+    -moz-column-gap: 20px;
+
+}
+main{
+    background-color: white;
+        z-index: 1;
+}
+
+.slide{
+    height: 400px;
+     background-color:  #4669ab;
+}
+.slideimage{
+    width: 50%;
+    height: 350px;
+    margin-top: 30px;
+}
+.carousel-caption{
+    padding-bottom: 310px;
+}
+#respbutton{
+  top: 0;
+    right: 0;
+    direction: rtl;
+    position: absolute;
+    padding-top: 30px;
+}
+#respnavbar{
+    background-color: rgba(2,2,2,0.9);
+
+}
+#respnavbar a{
+        color: white;
+
+}
+#collapsibleNavbar {
+    top: 0;
+    right: 0;
+    direction: rtl;
+    position: absolute;
+    padding-top: 30px;
+}
+#menu {
+    background-image: url("../img/N82753730-72034060.jpg");
+    background-attachment: fixed;
+    background-size:100% 100%;
+    height: 500px;
+
+}
+#collapsibleNavbar a{
+    color: black;
+     transition: font 1s;
+}
+#collapsibleNavbar a:hover{
+    font:bold 25px  fade;
+
+}
+#navItem{
+    float: right;
+
+}
+#imagenav{
+    max-width: 150px;
+     top: 0;
+
+    position: absolute;
+}
+
+.nav-item{
+    padding-right: 100px;
+    font: bold 20px "B Homa";
+    text-align: center;
+}
+.sidenav {
+display: none;
+}
+#footer{
+    position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:200px;
+  color:#fff;
+  z-index:-1;
+  background: linear-gradient(#4669ab, #304886);
+}
+#footerBody{
+    padding-right: 20%;
+    text-align: right;
+
+}
+
+#designed{
+    position: absolute;
+    color: lightgray;
+    bottom: 0;
+    padding-right:45%;
+}
+body{
+  padding-bottom:200px;
+    background-color: whitesmoke;
+}
+#khdmt{
+    text-align: center;
+
+}
+.row{
+    padding: 10px ;
+
+}
+.image {
+  display: block;
+  width: 100%;
+  height: 300px;
+}
+.modal-body{
+  height: 450px;
+    overflow: scroll;
+}
+
+
+
+
+/*#overlay*/
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left:0;
+
+  background-color: rgba(0,0,139,0.8);
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+#imageOverlay:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+.description{
+ font: 20px "B Zar";
+    text-align: justify;
+}
+.text {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+justify-content: right;
+    margin-top: 80px;
+  text-align: center;
+}
+#myTable{
+     text-align: right;
+}
+#contact{
+    font: 20px "B Zar";
+
+    float: right;
+    margin: 8px;
+   background-color: white;
+    width: 45%;
+    direction: rtl;
+}
+#contactForm{
+    direction: rtl;
+     text-align: right;
+    font: 20px "B Homa";
+    margin: 10px;
+        padding: 10px;
+     box-shadow: 2px 2px 5px gray;
+    background-color: white;
+     width: 45%;
+    line-height: 26px;
+
+}
+.center{
+text-align: center;
+}
+.tableList
+{
+    width: 100%
+}
+
+.tableList th{
+    padding: 20px;
+    background-color: darkblue;
+    color:white ;
+}
+.right{
+    text-align: right;
+}
+.tableList td{
+    padding: 10px;
+        border-bottom: solid 1px;
+}
+h1{
+    font: bold 35px "B Homa";
+    text-align: center;
+}
+.btn-block{
+    width: 40%;
+ margin-right: 25%;
+}
+.goTop{
+    display: none;
+    margin-right:30px;
+    background-color: #23272b;
+    width: 50px;
+    padding:8px;
+    border-radius: 10px;
+    bottom:10px;
+    float: right;
+    position: fixed;
+    z-index: 5000;
+}
+#goTopIcon{
+font-size:36px;
+    color: white ;
+
+}
+ a:hover{
+text-decoration: none;
+    color: white ;
+
+}
+
+.btn-block:hover{
+ background: #4669ab;
+  background: linear-gradient(#4669ab, #304886);
+  border-top: 1px solid #8ea4cd;
+  color: white;
+  text-shadow: 0 1px 1px rgba(255,255,255,.35);
+}
+#resume{
+     background: #4669ab;
+  background: linear-gradient(#4669ab, #304886);
+  border-top: 1px solid #8ea4cd;
+  color: white;
+  text-shadow: 0 1px 1px rgba(255,255,255,.35);
+    width: 30%;
+}
+#menuAbout{
+  background: linear-gradient(270deg,#304886,#4669ab, #39cccc);
+    height: 130px
+}
+.mflImage{
+   height: 380px;
+    width:90%;
+    margin-right: -80px;
+    margin-top: 30px
+}
+#menuAbout a{
+ color: white;
+
+}
+
+
+.about{
+   width: 80%;
+    font: 20px 'B Zar';
+direction: rtl;
+ text-align: justify;
+
+}
+#maintext{
+    text-align: justify;
+     font: 20px "B Homa";
+
+}
+
+#imageMain{
+    width:80%;
+    height: 400px;
+margin-left: 10%;
+    margin-top: -470px;
+}
+
+#imageAbout{
+    width:100%;
+    height: 500px;
+     margin-left: 10%;
+    margin-top: 50px;
+}
+.backDiv{
+    background-color: #4669ab;
+    width:80%;
+    height: 450px;
+}
+.backDiv2{
+
+    background-color: #4669ab;
+    width:70%;
+    height: 450px;
+}
+.modal-content{
+    width: 150%;
+}
+.modal{
+    margin-right: 20%;
+}
+#div3{
+    background-color: #4669ab;
+    width:80%;
+    height: 600px;
+}
+
+.Title{
+    padding-bottom: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+    .modal-body{
+     height:40em;
+    overflow: scroll;
+}
+
+    #contact{
+    float: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: 2px 2px 5px gray;
+        background-color: white;
+    width: 100%;
+        font-size: 18px;
+}
+
+.modal-content{
+    width: 100%;
+    font-size: 3vw;
+}
+.modal{
+    margin-right: 0;
+}
+    #open{
+    display: block;
+     top: 0;
+    right: 0;
+    direction: rtl;
+    position: absolute;
+    padding-top: 30px;
+    padding-right: 50px;
+    font-size:30px;
+    cursor:pointer
+}
+.sidenav {
+    display: block;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+
+  font-size: 20px;
+  color: white;
+  display: block;
+  transition:font 0.3s;
+
+}
+
+.sidenav a:hover {
+  color: gray;
+     font-size: 25px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right:50%;
+  font-size: 20px;
+
+}
+#navItem{
+    width: 100%;
+    float: inside;
+    padding-right: 0;
+
+}
+.nav-item{
+     padding-right: 0;
+        text-align: center;
+     padding-top: 40px;
+}
+.khdmtDiv{
+    display: grid;
+  grid-template-rows: 1fr 1fr ;
+ grid-template-columns: repeat(1,100%);
+    justify-content: space-around;
+  grid-row-gap: 20px;
+}
+ #contactForm{
+         margin: 0;
+        width:100%;
+
+}
+ #designed{
+    padding-right:30%;
+}
+.mflImage{
+   height: 380px;
+    width:100%;
+    margin-right: -80px;
+    margin-top: 30px
+}
+#imageMain{
+    width:80%;
+    height: 450px;
+margin-left: 10%;
+    margin-top: -300px;
+}
+
+.backDiv{
+    background-color: #4669ab;
+    width:80%;
+    height: 300px;
+}
+
+.backDiv2{
+
+    background-color: #4669ab;
+    width:90%;
+    height: 300px;
+}
+#footer{
+  height:250px;
+}
+body{
+  padding-bottom:250px;
+}
+#imageAbout{
+    width:100%;
+    height: 300px;
+     margin-left: 10%;
+    margin-top: 20px;
+}
+#div3{
+
+    height: 350px;
+}
+}

@@ -1,0 +1,104 @@
+{%  load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>ویرا سنجش آرکا-شرکت بازرسی فنی و بازرسی کف مخازن|فروش تجهیزات بازرسی فنی| فروش فیلم رادیوگرافی صنعتیویرا سنجش آرکا</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="  شرکت بازرسی فنی و بازرسی کف مخازن و فروش کلیه تجهیزات بازرسی فنی و فیلم رادیوگرافی صنعتی و mfl">
+    <meta name="title" content="شرکت بازرسی فنی و بازرسی کف مخازن|فروش تجهیزات بازرسی فنی| فروش فیلم رادیوگرافی صنعتی|ویرا سنجش آرکا">
+    <meta name="keywords" content="بازرسی کف مخازن، mfl، تجهیزات بازرسی فنی، فیلم رادیوگرافی صنعتی، بازرسی کف مخازن">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}" > </script>
+    <script src="{% static 'js/myFile.js' %}" > </script>
+ <link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+</head>
+<body id="body">
+<header>
+{#  make responsive menu #}
+    {% block header %}
+ <nav class="navbar navbar-expand-lg navbar-light" id="menu">
+ {% endblock %}
+     <a  href="#">  <img src="{% static 'img/Logo Vira.png' %}" class="navbar-brand" alt="لوگو آپاوب" href="#" id="imagenav"></a>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar"  >
+            <ul class="navbar-nav" id="navItem" >
+                <li class="nav-item" >
+                  <a class="nav-link" href="{% url 'arka:base'%}">صفحه اصلی</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'arka:base'%}#khdmt">خدمات</a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'arka:contact'%}" >تماس  با ما</a>
+                </li>
+  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'arka:about' %}">
+                        درباره ما
+                    </a>
+                </li>
+            </ul>
+        </div>
+      <span onclick="openNav()" id="open">&#9776; </span>
+        <div class="sidenav" id="respnavbar"   >
+             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="navbar-nav" id="navItem" >
+                <li class="nav-item" >
+                    <a class="nav-link" href="{% url 'arka:base'%}"  onclick="closeNav()"> صفحه اصلی</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'arka:base'%}#khdmt"  onclick="closeNav()">خدمات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'arka:contact'%}"  onclick="closeNav()">تماس  با ما</a>
+                </li>
+                <li class="nav-item">
+                     <a class="nav-link" href="{% url 'arka:about'%}"   onclick="closeNav()" >درباره ما</a>
+                </li>
+            </ul>
+        </div>
+ </nav>
+ </nav>
+
+</header>
+<main>
+<div dir="rtl">
+<div class="goTop" id="goTop">
+
+    <a id="goTopIcon" class="fa fa-chevron-up " href="#body"></a>
+</div>
+</div>
+    {% block content %}
+
+    {% endblock %}
+</main>
+
+<footer id="footer" class="center" dir="rtl" >
+    <div id="footerBody" class="container">
+    <br>
+آدرس مرکزی:
+    	تهران:	خیابان رودکی نرسیده به آذربایجان، نبش کوچه رضوان، پلاک 2، طبقه سوم
+    <br>
+    تلفن	تهران:	02166362471,
+09124221526
+    <br>
+    ایمیل:
+	www.ViraSanjeshArka.com
+    ,
+S6368ndt@gmail.com
+        </div>
+   <div align="center" id="designed" > Designed by appaweb.ir
+    </div>
+    <br/>
+</footer>
+</body>
+</html>
